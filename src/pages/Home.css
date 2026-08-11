@@ -1,0 +1,10 @@
+.mailClass{
+    align-items: center;
+    display: flex;
+    padding: 20px;
+    border-radius: 7px;
+    border-color: #CDD2C9;
+    border-width: 3px;
+    border-style: solid;
+    width: fit-content;
+}
