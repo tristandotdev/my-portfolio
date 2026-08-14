@@ -2,7 +2,7 @@ import './Cards.css'
 import { useState } from 'react';
 import { useEffect } from 'react';
 
-function CardComponent({ name , gitUrl , desc , imageUrl }) {
+function CardComponent({ name , gitUrl , desc , imageUrl , tech , youtubeUrl }) {
   
   const [mobileMode, setMobileMode] = useState(window.innerWidth < 768);
 
@@ -27,17 +27,34 @@ function CardComponent({ name , gitUrl , desc , imageUrl }) {
           marginBottom: "10px"
         }}>
           <h1 style={{fontSize: !mobileMode ? "42px" : "24px", margin: "0px"}}>{name}</h1>
-          <a 
+          <div>
+            <a 
             target="_blank" 
             href={gitUrl}>
             <img 
-              style={{width: "36px"}} 
+              style={{width: "36px", marginRight: "10px"}} 
               src="https://cdn-icons-png.flaticon.com/512/25/25231.png" 
               alt="GitHub Link" />
           </a>
+          {youtubeUrl && <a 
+            target="_blank" 
+            href={youtubeUrl}>
+            <img 
+              style={{width: "36px"}} 
+              src='../src/assets/external-link.svg' 
+              alt="YouTube Link" />
+          </a>}
+          </div>
         </div>
         {imageUrl && <img style={{width: "100%"}} src={imageUrl}></img>}
-        <p>{desc}</p>
+        <p style={{marginBottom: "32px"}}>{desc}</p>
+        <p
+          style={{
+            fontSize: "12px",
+            fontStyle: "italic",
+            color: "#2d3a1f6e"
+          }}
+        >{tech}</p>
       </div>
     </>
   )
