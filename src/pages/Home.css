@@ -7,4 +7,30 @@
     border-width: 3px;
     border-style: solid;
     width: fit-content;
+    height: fit-content;
+}
+
+#introHead{
+    font-size: 100px;
+    margin: 0; 
+    margin-right: 20px;
+}
+
+#introPara{
+    font-size: 45px;
+}
+
+@media (max-width: 768px) {
+    #introHead{
+        font-size: 40px;
+        margin: 0; 
+        margin-right: 20px;
+        align-self: center;
+        justify-self: center;
+        text-align: center;
+    }
+
+    #introPara{
+        font-size: 20px;
+    }
 }
