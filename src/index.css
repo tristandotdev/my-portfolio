@@ -6,16 +6,21 @@ html{
 }
 
 nav{
-  min-height: 80px;
+  height: 80px;
+  box-sizing: border-box;
+
+  display: flex;
   align-items: center;
   justify-content: center;
-  display: flex;
   gap: 50px;
+
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
+
   background-color: #f4f1e8ee;
-  border-bottom: #e7e4dac4;
-  border-bottom-style: solid;
+  border-bottom: 1px solid #e7e4dac4;
   backdrop-filter: blur(5px);
 }
 
