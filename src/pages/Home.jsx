@@ -1,17 +1,6 @@
-import mailIcon from "../assets/mail.svg"
-import checkIcon from "../assets/check.svg"
 import { useEffect, useState } from "react";
 import './Home.css'
-
-function MessageComp() {
-  return (
-    <a 
-      className="mailClass" 
-      href="mailto:tristandepoosingh001@gmail.com">
-      <img src={mailIcon} alt="Mail" style={{marginRight: "10px"}}/>  Message!
-    </a>
-  );
-}
+import { MessageComp } from "../components/MessageComp";
 
 function IntroCard() {
   const [mobileMode, setMobileMode] = useState(window.innerWidth < 768);
@@ -28,7 +17,7 @@ function IntroCard() {
 
   return(
     <>
-    <div className={!mobileMode ? "verticalDiv" : "horizontalDiv"} style={{minHeight: "calc(100vh - 140px)"}}>
+    <div className={!mobileMode ? "verticalDiv" : "horizontalDiv"} style={{minHeight: "calc(100vh - 150px)"}}>
       <div>
         <img src="https://avatars.githubusercontent.com/u/225940894?v=4"
         style={{width: "200px", borderRadius: "50%"}}></img>
@@ -39,7 +28,7 @@ function IntroCard() {
           {!mobileMode && <MessageComp/>}
         </div>
         
-        <p id="introPara">Aspiring Software Engineer in Trinidad. Studying by day and building by night.</p>
+        <p id="introPara">Computer Science student in Trinidad. Studying by day and building by night.</p>
         {mobileMode && <MessageComp/>}
         
       </div>
@@ -51,21 +40,18 @@ function IntroCard() {
 function AboutMe() {
   return(
     <>
+    <div>
+      <h1 style={{justifySelf: "center"}}>About Me</h1>
       <div className="verticalDiv">
-        <div>
-          <h1 style={{justifySelf: "center"}}>About Me</h1>
-          <p>I am currently a year 2 student at the University of The West Indies where I study Computer Science. On the side, I do my own projects with a touch of Graphic Design.</p>
-          <p>Here are some of the technologies I work with:</p>
-          <ul>
-            <li>JavaScript ES6+</li>
-            <li>C++</li>
-            <li>React.js</li>
-          </ul>
-        </div>
-        <div>
-          <img src="https://media.tenor.com/oJKQsEPQrYIAAAAM/spongebob-spongebob-squarepants.gif" style={{width: "200px"}}></img>
-        </div>
+        <p style={{maxWidth: "70%"}}>I am currently a year 2 student at the University of The West Indies where I study Computer Science. On the side, I do my own projects with a touch of Graphic Design. In my freetime, I play videogames and do editing!</p>
+        <ul>
+          <li>JavaScript ES6+</li>
+          <li>React.js</li>
+          <li>C++</li>
+          <li>HTML/CSS</li>
+        </ul>
       </div>
+    </div>
     </>
   )
 }
