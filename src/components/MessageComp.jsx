@@ -5,7 +5,7 @@ export function MessageComp() {
     <a
       className="mailClass"
       href="mailto:tristandepoosingh001@gmail.com">
-      <img src={mailIcon} alt="Mail" style={{ marginRight: "10px" }} />  Message!
+      <img src={mailIcon} alt="Mail" style={{ marginRight: "10px" }} />  Say hi!
     </a>
   );
 }

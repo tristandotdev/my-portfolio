@@ -14,17 +14,16 @@ function IntroCard() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-
   return(
     <>
-    <div className={!mobileMode ? "verticalDiv" : "horizontalDiv"} style={{minHeight: "calc(100vh - 150px)"}}>
+    <div className={!mobileMode ? "verticalDiv" : "horizontalDiv"} style={{minHeight: "calc(100vh)"}}>
       <div>
         <img src="https://avatars.githubusercontent.com/u/225940894?v=4"
         style={{width: "200px", borderRadius: "50%"}}></img>
       </div>
       <div>
         <div style={{display: "flex", alignItems: "center", justifySelf: mobileMode ? "center" : "left"}}>
-          <h1 id="introHead" style={{ textAlign: mobileMode ? "center" : "left" }}>Hi, <span style={{color: "#867a5c"}}>Tristan</span> here! </h1> 
+          <h1 id="introHead" style={{ textAlign: mobileMode ? "center" : "left" }}>Hey, <span style={{color: "#867a5c"}}>Tristan</span> here! </h1> 
           {!mobileMode && <MessageComp/>}
         </div>
         
@@ -40,7 +39,7 @@ function IntroCard() {
 function AboutMe() {
   return(
     <>
-    <div>
+    <section id="About"><div>
       <h1 style={{justifySelf: "center"}}>About Me</h1>
       <div className="verticalDiv">
         <p style={{maxWidth: "70%"}}>I am currently a year 2 student at the University of The West Indies where I study Computer Science. On the side, I do my own projects with a touch of Graphic Design. In my freetime, I play videogames and do editing!</p>
@@ -51,7 +50,7 @@ function AboutMe() {
           <li>HTML/CSS</li>
         </ul>
       </div>
-    </div>
+    </div></section>
     </>
   )
 }

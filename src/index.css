@@ -1,12 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 
+html{
+  scroll-behavior: smooth;
+}
+
 nav{
   min-height: 80px;
   align-items: center;
   justify-content: center;
   display: flex;
   gap: 50px;
+  position: fixed;
+  width: 100%;
+  background-color: #f4f1e8ee;
+  border-bottom: #e7e4dac4;
+  border-bottom-style: solid;
+  backdrop-filter: blur(5px);
 }
 
 *{
@@ -45,6 +55,10 @@ hr {
   border: none;
   height: 2px;
   background-color: #867a5c;
+}
+
+li{
+  font-size: 24px;
 }
 
 .verticalDiv {
@@ -86,5 +100,9 @@ hr {
     a{
       align-self: center;
       justify-self: center;
+    }
+
+    li{
+      font-size: 20px;
     }
 }
