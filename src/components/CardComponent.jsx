@@ -33,7 +33,7 @@ function CardComponent({ name , gitUrl , desc , imageUrl , tech , youtubeUrl }) 
             href={gitUrl}>
             <img 
               style={{width: "36px", marginRight: "10px"}} 
-              src="https://cdn-icons-png.flaticon.com/512/25/25231.png" 
+              src="../src/assets/github.svg" 
               alt="GitHub Link" />
           </a>
           {youtubeUrl && <a 
