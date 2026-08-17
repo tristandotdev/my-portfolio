@@ -27,8 +27,8 @@ function IntroCard() {
           {!mobileMode && <MessageComp/>}
         </div>
         
-        <p id="introPara">Computer Science student in Trinidad. Studying by day and building by night.</p>
-        {mobileMode && <MessageComp/>}
+        <p id="introPara" style={{textAlign: mobileMode ? "center" : "left"}}>Computer Science student in Trinidad. Studying by day and building by night.</p>
+        {mobileMode && (<div className="verticalDiv"><MessageComp/></div>)}
         
       </div>
     </div>
