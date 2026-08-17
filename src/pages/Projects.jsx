@@ -2,7 +2,7 @@ import CardComponent from "../components/CardComponent"
 function Projects() {
   return (
     <>
-    <div className="horizontalDiv" id="Projects">
+    <div className="horizontalDiv" id="Projects" style={{height: "75vh"}}>
       <h1 style={{marginBottom: "50px"}}>Projects</h1>
       <div className="verticalDiv" style={{maxWidth: "80%"}}>
         <CardComponent
