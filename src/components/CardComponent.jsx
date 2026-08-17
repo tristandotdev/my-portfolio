@@ -28,13 +28,13 @@ function CardComponent({ name , gitUrl , desc , imageUrl , tech , youtubeUrl }) 
           margin: "0",
           marginBottom: "10px"
         }}>
-          <h1 style={{fontSize: !mobileMode ? "42px" : "24px", margin: "0px"}}>{name}</h1>
+          <h1 style={{fontSize: !mobileMode ? "42px" : "24px", margin: "0px", flex: "1"}}>{name}</h1>
           <div>
             <a 
             target="_blank" 
             href={gitUrl}>
             <img 
-              style={{width: "36px", marginRight: "10px"}} 
+              style={{width: "24px", marginRight: "10px"}} 
               src={gitIcon}
               alt="GitHub Link" />
           </a>
@@ -42,7 +42,7 @@ function CardComponent({ name , gitUrl , desc , imageUrl , tech , youtubeUrl }) 
             target="_blank" 
             href={youtubeUrl}>
             <img 
-              style={{width: "36px"}} 
+              style={{width: "24px"}} 
               src={youtubeIcon}
               alt="YouTube Link" />
           </a>}
