@@ -1,4 +1,6 @@
 import './Cards.css'
+import gitIcon from "../assets/github.svg";
+import youtubeIcon from "../assets/external-link.svg";
 import { useState } from 'react';
 import { useEffect } from 'react';
 
@@ -33,7 +35,7 @@ function CardComponent({ name , gitUrl , desc , imageUrl , tech , youtubeUrl }) 
             href={gitUrl}>
             <img 
               style={{width: "36px", marginRight: "10px"}} 
-              src="../src/assets/github.svg" 
+              src={gitIcon}
               alt="GitHub Link" />
           </a>
           {youtubeUrl && <a 
@@ -41,7 +43,7 @@ function CardComponent({ name , gitUrl , desc , imageUrl , tech , youtubeUrl }) 
             href={youtubeUrl}>
             <img 
               style={{width: "36px"}} 
-              src='../src/assets/external-link.svg' 
+              src={youtubeIcon}
               alt="YouTube Link" />
           </a>}
           </div>
