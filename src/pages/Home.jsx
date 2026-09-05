@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import './Home.css'
 import { MessageComp } from "../components/MessageComp";
+import Icon from '../assets/icon.jpeg'
 
 function IntroCard() {
   const [mobileMode, setMobileMode] = useState(window.innerWidth < 768);
@@ -18,7 +19,7 @@ function IntroCard() {
     <>
     <div className={!mobileMode ? "verticalDiv" : "horizontalDiv"} style={{minHeight: "calc(100vh)"}} id="Home">
       <div>
-        <img src="https://avatars.githubusercontent.com/u/225940894?v=4"
+        <img src={Icon}
         style={{width: "200px", borderRadius: "50%"}}></img>
       </div>
       <div>
