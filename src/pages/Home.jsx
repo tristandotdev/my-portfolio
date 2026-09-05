@@ -43,12 +43,21 @@ function AboutMe() {
       <div className="horizontalDiv" style={{minHeight: "100vh"}} id="About">
       <h1 style={{justifySelf: "center"}}>Who am I?</h1>
       <div className="verticalDiv" id="about-details">
-        <p>I am currently a year 2 student at the University of The West Indies where I study Computer Science. On the side, I do my own projects with a touch of Graphic Design. In my freetime I play videogames, edit, and do calisthenics!</p>
+        <div>
+          <p>
+          I’m currently a second-year Computer Science student at the University of the West Indies, building a strong foundation in programming and computer science fundamentals.
+          </p>
+          <p>
+            When I’m not coding, I spend my free time playing video games, editing, and doing calisthenics.
+          </p>
+        </div>  
+
         <ul>
-          <li>JavaScript ES6+</li>
-          <li>React.js</li>
+          <li>JavaScript</li>
+          <li>React</li>
           <li>C++</li>
-          <li>HTML/CSS</li>
+          <li>HTML & CSS</li>
+          <li>Firebase Authentication</li>
         </ul>
       </div>
     </div>
