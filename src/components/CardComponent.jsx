@@ -26,9 +26,9 @@ function CardComponent({ name , gitUrl , desc , imageUrl , tech , youtubeUrl }) 
           alignItems: "center",
           padding: "0",
           margin: "0",
-          marginBottom: "10px"
+          marginBottom: "10px",
         }}>
-          <h1 style={{fontSize: !mobileMode ? "42px" : "24px", margin: "0px", flex: "1"}}>{name}</h1>
+          <h1 style={{fontSize: !mobileMode ? "42px" : "24px", margin: "0px", flex: "1", textAlign: "left"}}>{name}</h1>
           <div>
             <a 
             target="_blank" 
@@ -49,7 +49,7 @@ function CardComponent({ name , gitUrl , desc , imageUrl , tech , youtubeUrl }) 
           </div>
         </div>
         {imageUrl && <img style={{width: "100%"}} src={imageUrl}></img>}
-        <p style={{marginBottom: "32px"}}>{desc}</p>
+        <p style={{marginBottom: "32px", textAlign: "left"}}>{desc}</p>
         <p
           style={{
             fontSize: "12px",
