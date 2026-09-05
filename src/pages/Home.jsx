@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import './Home.css'
 import { MessageComp } from "../components/MessageComp";
-import Icon from '../assets/icon.jpeg'
+import Icon from '../assets/icon.webp'
 
 function IntroCard() {
   const [mobileMode, setMobileMode] = useState(window.innerWidth < 768);
